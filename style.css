@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+
+    font-size: 30px;
+
+    color: #1f3c88;
+
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #666;
+
+    font-size: 14px;
+
+    margin-bottom: 28px;
+}
+
+
+/* Language Selection */
+
+.language-box {
+    display: flex;
+
+    align-items: end;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.language {
+    flex: 1;
+}
+
+.language label {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+select {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    background: white;
+}
+
+.arrow {
+    font-size: 22px;
+
+    color: #777;
+
+    padding-bottom: 8px;
+}
+
+
+/* Labels */
+
+.section-label {
+    display: block;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+/* Text Areas */
+
+textarea {
+    width: 100%;
+
+    height: 150px;
+
+    resize: vertical;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    font-family: Arial, sans-serif;
+
+    outline: none;
+}
+
+textarea:focus,
+select:focus {
+    border-color: #1f3c88;
+}
+
+
+/* Character Counter */
+
+#counter {
+    text-align: right;
+
+    font-size: 12px;
+
+    color: #777;
+
+    margin-top: 5px;
+
+    margin-bottom: 18px;
+}
+
+
+/* Translate Button */
+
+.translate-btn {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #1f3c88;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin-bottom: 20px;
+}
+
+.translate-btn:hover {
+    background: #172f6b;
+}
+
+
+/* Loader */
+
+.loader {
+    display: none;
+
+    width: 20px;
+    height: 20px;
+
+    border: 3px solid #ddd;
+    border-top: 3px solid #1f3c88;
+
+    border-radius: 50%;
+
+    margin: 0 auto 15px;
+}
+
+
+/* Actions */
+
+.actions {
+    margin-top: 10px;
+
+    text-align: right;
+}
+
+.copy-btn {
+    padding: 9px 18px;
+
+    background: white;
+
+    border: 1px solid #1f3c88;
+
+    color: #1f3c88;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.copy-btn:hover {
+    background: #1f3c88;
+
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .language-box {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .arrow {
+        text-align: center;
+
+        padding: 0;
+    }
+
+    textarea {
+        height: 130px;
+    }
+}
